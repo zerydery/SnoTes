@@ -22,7 +22,7 @@ function windowOnClick(event) {
 
 function getP(){
     var tipe = getParameterByName('type')
-    if (!tipe) {
+    if (tipe) {
         var modal = document.querySelector(".modal");
         var closeButton = document.querySelector(".close-button");
         toggleModal();
